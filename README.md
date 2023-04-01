@@ -1,2 +1,0 @@
-# Web_Systems_and_Technology
-HTML_CSS_JAVASCRIPT_BOOTSTRAP_JQUERY
