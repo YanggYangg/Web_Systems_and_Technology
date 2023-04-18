@@ -1,0 +1,5 @@
+#example1{
+    background-image: url(../img/meomeo.jpg), url(../img/mặt\ cười\ icon.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}

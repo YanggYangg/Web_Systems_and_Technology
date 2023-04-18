@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thị Quỳnh Giang_21034451</title>
+    <link rel="stylesheet" href="../css/c6_Bai06.css">
+</head>
+<body>
+    <div class="mayTinh">
+        <div class="head">
+            <p>Calculator</p><br>
+            <div class="head-nav">
+                <p>&#8211;&#8211;</p>
+                <p>&#9744;</p>
+                <p>X</p>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="home">&#8801;</div>
+            <h4>STANDARD</h4>
+        </div>
+        <table border="0">
+            <tr>
+                <td colspan="4" rowspan="5"><input type="text" id="result" disabled placeholder="0"></td>
+            </tr>
+        </table>
+        <table>
+            <tr class="col1">
+                <td style="opacity:0.5">MC</td>
+                <td style="opacity:0.5">MR</td>
+                <td>M+</td>
+                <td>M-</td>
+                <td>MS</td>
+                <td>M</td>
+            </tr>
+        </table>
+        <hr style="opacity:0.5" width="100%">
+        <table>
+            <tr>
+                <td><input value="&#37;" type="button" onclick="phanTram()"></td>
+                <td><input type="button" value="&#10003;" onclick="can()"></td>
+                <td><input type="button" value="x&sup2;" onclick="luyThua()"></td>
+                <td><input type="button" value="&#8543;x" onclick="phanso1phan()"></td>
+            </tr>
+            <tr>
+                <td>CE</td>
+                <td>C</td>
+                <td><input type="button" value="&#10005;" onclick="xoaKQ()"></td>
+                <td><input type="button" value="&#247;" onclick="appendToResult('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="appendToResult('7')"></td>
+                <td><input type="button" value="8" onclick="appendToResult('8')"></td>
+                <td><input type="button" value="9" onclick="appendToResult('9')"></td>
+                <td><input type="button" value="x" onclick="appendToResult('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="appendToResult('4')"></td>
+                <td><input type="button" value="5" onclick="appendToResult('5')"></td>
+                <td><input type="button" value="6" onclick="appendToResult('6')"></td>
+                <td><input type="button" value="-" onclick="appendToResult('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="appendToResult('1')"></td>
+                <td><input type="button" value="2" onclick="appendToResult('2')"></td>
+                <td><input type="button" value="3" onclick="appendToResult('3')"></td>
+                <td><input type="button" value="+" onclick="appendToResult('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="&plusmn;" onclick="adddauTru()"></td>
+                <td><input type="button" value="0" onclick="appendToResult('0')"></td>
+                <td><input type="button" value="." onclick="appendToResult('.')"></td>
+                <td><input type="button" value="=" onclick="calculateResult()"></td>
+            </tr>
+        </table>
+
+        <script type="text/javascript">
+            function appendToResult(value) {
+                document.getElementById("result").value += value;
+            }
+
+            function phanTram() {
+                var value = document.getElementById("result").value;
+                document.getElementById("result").value = (value * 0.01);
+            }
+
+            function can() {
+                var value = document.getElementById("result").value;
+                document.getElementById("result").value = Math.sqrt(value);
+            }
+
+            function luyThua() {
+                var value = document.getElementById("result").value;
+                document.getElementById("result").value = Math.pow(value, 2);
+            }
+
+            function phanso1phan() {
+                var value = document.getElementById("result").value;
+                document.getElementById("result").value = 1 / value;
+            }
+
+            function adddauTru() {
+                var value = document.getElementById("result").value;
+                document.getElementById("result").value = -value;
+            }
+
+            function xoaKQ() {
+                document.getElementById("result").value = "";
+            }
+
+            function calculateResult() {
+                var result = eval(document.getElementById("result").value);
+                document.getElementById("result").value = result;
+            }
+        </script>
+</div>
+</body>
+</html>

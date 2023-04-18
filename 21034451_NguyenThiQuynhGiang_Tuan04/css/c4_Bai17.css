@@ -1,0 +1,25 @@
+.top-menu{
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    background-color: #990000;
+    outline: 20px solid #e7eee7;
+}
+.top-menu li{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.top-menu li:last-child{
+    margin-right: 0;
+}
+
+.top-menu a:hover{
+    background-color: rgba(202, 13, 66, 0.786);
+}
+.top-menu a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}

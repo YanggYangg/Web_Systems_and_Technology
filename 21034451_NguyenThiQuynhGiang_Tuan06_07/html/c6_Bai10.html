@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thị Quỳnh Giang_21034451</title>
+    <!-- <link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map"> -->
+</head>
+<body>
+    <input type="text" name="txtCharNum>
+    <textarea name="txtContent" cols="50" rows="10" onkeyup="KiemTra();"></textarea>
+
+    <script language="JavaScript">
+        function KiemTra(){
+            if(txtContent.value.length >200)
+                alert("Bạn đã gõ quá số kí tự cho phép !");
+            txtCharNum.value = txtContent.value.length;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.button1:hover{
+    border-style: double;
+    border-color: red;
+    display: inline-flex;
+}
+.button2:hover{
+    border-style: double;
+    border-color: red;
+    display: inline-flex;
+    margin: 5px;
+}
+.button3:hover{
+    border-style: double;
+    border-color: red;
+    display: inline-flex;
+    margin: 5px;
+}
+.button4:hover{
+    border-style: double;
+    border-color: red;
+    display: inline-flex;
+    margin: 5px;
+}
+.button5:hover{
+    border-style: double;
+    border-color: red;
+    display: inline-flex;
+    margin: 5px;
+}
+.button6:hover{
+    border-style: double;
+    border-color: red;
+    display: inline-flex;
+    margin: 5px;
+}
+.button7:hover{
+    border-style: double;
+    border-color: red;
+    display: inline-flex;
+    margin: 5px;
+}

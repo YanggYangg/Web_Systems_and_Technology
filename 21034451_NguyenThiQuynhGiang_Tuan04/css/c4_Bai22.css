@@ -1,0 +1,27 @@
+div.layout{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+}
+div.header{
+    width: 100%;
+    background-color: gray;
+    border: 1px solid rgb(0, 0, 0);
+}
+div.nav{
+    width: 34%;
+    height: 300px;
+    float: left;
+    background-color: #CCCCCC;
+    padding: 0;
+    border: 1px solid black;
+}
+div.section{
+    width: 65%;
+    height: 300px;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid;
+    float: right;
+}
+p{
+    color: gray;
+}

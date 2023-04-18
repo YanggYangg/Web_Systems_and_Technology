@@ -1,0 +1,73 @@
+#p1{
+    border-width: 15px 15px 15px 15px;
+    border-style:solid;
+    border-color: #85C226 #F7C200 #4493A0 #DF127B;
+    text-align: center;
+}
+#ridge{
+    width: 70px;
+    height: 20px;
+    background-color: red;
+    border-style: ridge;
+}
+#p2{
+    border-width: 15px 15px 15px 15px;
+    border-style:solid dotted groove double;
+    border-color: #85C226 #F7C200 #4493A0 #DF127B;
+    text-align: center;
+}
+#p3{
+    border-width: 5px 10px 15px  20px;
+    border-color: #85C226 #F7C200 #4493A0 #DF127B;
+    text-align: center;
+    border-style:solid;
+}
+#p4{
+    box-shadow: 0px 30px 70px 20px;
+    -moz-box-shadow: 0px 30px 70px 20px;
+    -webkit-box-shadow: 0px 30px 70px 20px;
+    border-style: ridge;
+    text-align: center;
+}
+#adv-hemisphere{
+    border-width: 4px 30px 4px 30px;
+    border-style: groove ridge dashed groove;
+    border-color: green;
+    border-radius: 100px 100px 0 0;
+    -moz-border-radius: 100px 100px 0 0;
+    -webkit-border-radius: 100px 100px 0 0;
+}
+#round-rectangle{
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-color: yellow;
+    border-style: ridge;
+    text-align: center;
+}
+#adv-round-rectangle{
+    border-width: 0px 12px 0px 12px;
+    border-style: double;
+    border-color: violet;
+    border-radius: 40px 40px 60px 60px;
+    -moz-border-radius: 40px 40px 60px 60px;
+    -webkit-border-radius: 40px 40px 60px 60px;
+    text-align: center;
+}
+#bullet{
+    border-radius: 20px 100px 100px 20px;
+    -moz-border-radius:20px 100px 100px 20px;
+    -webkit-border-radius: 20px 100px 100px 20px;
+    border-color:#00AA00;
+    border-style: solid;
+    text-align: center;
+}
+#adv-leaf{
+    background: orange;
+    border-width: 4px 30px 4px 30px;
+    border-style: solid;
+    border-color: #56c6d9 #56c6d9 #fe2192 #fe2192;
+    border-radius: 0 120px 0 120px;
+    -moz-border-radius: 0 120px 0 120px;
+    -webkit-border-radius: 0 120px 0 120px;
+}

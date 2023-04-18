@@ -1,0 +1,39 @@
+.ribbon-container {
+    position: relative;
+    width: 800px;
+  }
+  h1{
+    font-size: 100px;
+  }
+  .ribbon {
+    padding-left: 100px;
+    padding-right: 100px;
+    position: absolute;
+    top: -20px;
+    left: -80px;
+    color: #fff;
+    background-color: #f00;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 10px #888888;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    text-shadow: 0 0 3px #000000, 3px 0 3px #000000, 0 3px 3px #000000, -3px 0 3px #000000, 0 -3px 3px #000000;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+  }
+  
+  .ribbon:hover {
+    transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    box-shadow: 0 0 20px #888888;
+  }
