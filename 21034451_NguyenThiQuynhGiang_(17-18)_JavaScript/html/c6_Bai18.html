@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thị Quỳnh Giang_21034451</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <style>
+        .col-sm-7 .p1{
+            font-size: 30px;
+            padding-top: 5px;
+            color: white;
+        }
+    </style>
+    <script>
+        function ktraSDT(){
+            let sdt = document.getElementById('phone').value;
+            //Số điện thoại theo định dạng vd: 555-555-5555
+            pattern=/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+            if(pattern.test(sdt)){
+                document.getElementById('erSDT').innerHTML = "*";
+                return true;
+            }
+            else{
+                document.getElementById('erSDT').innerHTML = "Số điện thoại bị sai !!!";
+                return false;
+            }
+        }
+        function kiemtramatkhau(){
+            let pass = document.getElementById('pass1').value;
+            //Mật khẩu : Vui lòng bao gồm ít nhất 1 ký tự viết hoa, 1 ký tự viết thường và 1 số
+            let patten  = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+            if(patten.test(pass)){
+                document.getElementById('erpass').innerHTML = "*";
+                return true;
+            }
+            else{
+                document.getElementById('erpass').innerHTML = "Mật khẩu chưa đúng định dạng !!!"
+                return false;
+            }
+        }
+        function kiemtratendangnhap(){
+            let ten = document.getElementById('lastname').value;
+            //Họ tên đệm
+            let pattendn = /^\w{3,}$/;// tên đăng nhập
+            let patten = /^([A-Z]{1}[a-z]*\s)+([A-Z]{1}[a-z]*)$/;
+            if(pattendn.test(ten)){
+                document.getElementById('ertendn').innerHTML = "*";
+                return true;
+            }
+            else {
+                document.getElementById('ertendn').innerHTML = "Tên bị sai !!!";
+                return false
+            }
+        }
+        function kiemtratendangnhap(){
+            let ten = document.getElementById('name').value;
+            //Họ tên đệm
+            let pattendn = /^\w{3,}$/;// tên đăng nhập
+            let patten = /^([A-Z]{1}[a-z]*\s)+([A-Z]{1}[a-z]*)$/;
+            if(pattendn.test(ten)){
+                document.getElementById('ertendn').innerHTML = "*";
+                return true;
+            }
+            else {
+                document.getElementById('ertendn').innerHTML = "Tên bị sai !!!";
+                return false
+            }
+        }
+        function kiemtramatkhau(){
+            let pass = document.getElementById('password').value;
+            //Mật khẩu : Vui lòng bao gồm ít nhất 1 ký tự viết hoa, 1 ký tự viết thường và 1 số
+            let patten  = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+            if(patten.test(pass)){
+                document.getElementById('erpassword').innerHTML = "*";
+                return true;
+            }
+            else{
+                document.getElementById('erpassword').innerHTML = "Mật khẩu chưa đúng định dạng !!!"
+                return false;
+            }
+        }
+        // Trên 13 mới được sử dụng facebook
+        function ktns() {
+            let ns = document.getElementById('old').value; //string
+            ns = new Date(ns);
+            let namht = new Date();
+            let tuoi = namht.getFullYear() - ns.getFullYear();
+            if (tuoi < 13) //sai
+            {
+                document.getElementById('erns').innerHTML = "Tuổi phải trên 13 !!!"
+                return false;
+            } else {
+                document.getElementById('erns').innerHTML = "*"
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+     
+    <div>
+        <div>
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <div class="col-sm-7">
+                    <p class="p1"><B>facebook</B></p>
+                </div>
+                <div class="row ">
+                    <div class="col-5 float-right">
+                        <form action="" class="">
+                            <div class="form-group">
+                                <label for="phone"><font color="white">Email hoặc điện thoại</font></label>
+                                <input type="text" id="phone" onblur="ktraSDT()"><br>
+                                <div id='erSDT' style="color: white;"><I>*</I></div>
+                                <input type="checkbox">
+                                <label for=""><font color="white">Duy trì đăng nhập</font></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-5">
+                        <form action="" class="">
+                            <div>
+                                <label for=""><font color="white">Mật khẩu</font></label>
+                                <input type="password" id="pass1" onblur="kiemtramatkhau()"><br>
+                                <div id='erpass' style="color: white;"><I>*</I></div>
+                                <label for=""><font color="white">Quên mật khẩu</font></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-2 d-flex justify-content-between align-items-center">
+                        <input type="button" value="Đăng nhập" style="background-color: #333399; color: white;">
+                        <p class="m-0"><a href="#">Đăng ký</a></p>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <div class="row" style="background-color: rgb(229, 229, 249);">
+            <div class="col-sm-3 img-block">
+                <img src="../img/facebook.png" alt="Your Image">
+                <p style="font-size:50px;color: #333399; text-align: center;">Cảm ơn bạn đã ghé thăm! </p>
+                <p><B>chúng tôi mong sớm gặp lại bạn.</B></p>
+            </div>
+            <div class="col-sm-7 offset-sm-2 form-block">
+               
+                <form style="max-width: 500px; margin: 0 auto;">
+                    <h2>Đăng Ký </h2>
+                    <p><b>Miễn phí và sẽ luôn như vậy.</b></p>
+                    <div class="form-inline form-group">
+                        <input type="text" class="form-control" id="lastname" placeholder="Họ" name="name"
+                            style="max-width: 200px;" onblur="kiemtratendangnhap()">
+                        <div id='ertendn'c style="color: black;">*</div>
+
+                        <input type="text" class="form-control" id="name" placeholder="Tên" name="name"
+                            style="max-width: 200px;"onblur="kiemtratendangnhap()">
+                        <div id='ertendn'c style="color: black;">*</div>
+
+                    </div>
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" id="email" placeholder=" Email đăng nhập" name="email"
+                            style="max-width: 400px;">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" id="email" placeholder="Nhập lại email" name="email"
+                            style="max-width: 400px;">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" id="password" placeholder="Mật khẩu"
+                            name="password" style="max-width: 400px;" onblur="kiemtramatkhau()" >
+                            <div id='erpassword' style="color: black;"><I>*</I></div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="date" class="form-control" id="old" placeholder=" Năm sinh"
+                            style="max-width: 400px;" onblur="ktns()">
+                        <div id='erns' style="color: black;">*</div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
